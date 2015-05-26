@@ -24,8 +24,8 @@ namespace WinAppVersion
         [DataContract]
         public class ProgramProperty
         {
-            [DataMember(Name = "setting")]
-            public Dictionary<string, string> Setting = new Dictionary<string, string>();
+            [DataMember(Name = "settings")]
+            public Dictionary<string, string> Settings = new Dictionary<string, string>();
             [DataMember(Name = "command")]
             public string Command;
         }

@@ -123,9 +123,9 @@ namespace WinAppVersion
                 if (UserSettingData.VersionCommands.ContainsKey(CurrentVersion))
                 {
                     Command = UserSettingData.VersionCommands[CurrentVersion].Command;
-                    if (UserSettingData.VersionCommands[CurrentVersion].Setting.Keys.Count > 0)
+                    if (UserSettingData.VersionCommands[CurrentVersion].Settings.Keys.Count > 0)
                     {
-                        Environments = UserSettingData.VersionCommands[CurrentVersion].Setting;
+                        Environments = UserSettingData.VersionCommands[CurrentVersion].Settings;
                     }
                 }
                 else
@@ -138,9 +138,9 @@ namespace WinAppVersion
                 if (UserSettingData.VersionCommands.ContainsKey(DefaultVersion))
                 {
                     Command = UserSettingData.VersionCommands[DefaultVersion].Command;
-                    if (UserSettingData.VersionCommands[DefaultVersion].Setting.Keys.Count > 0)
+                    if (UserSettingData.VersionCommands[DefaultVersion].Settings.Keys.Count > 0)
                     {
-                        Environments = UserSettingData.VersionCommands[DefaultVersion].Setting;
+                        Environments = UserSettingData.VersionCommands[DefaultVersion].Settings;
                     }
                 }
                 else
